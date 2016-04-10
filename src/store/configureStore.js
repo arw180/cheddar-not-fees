@@ -12,6 +12,7 @@ export default function configureStore(initialState) {
 
   const middleware = applyMiddleware(thunkMiddleware, logger);
 
+  // TODO: bad idea to pass initialState in from here?
   const store = middleware(createStore)(rootReducer, initialState);
 
   if (module.hot) {

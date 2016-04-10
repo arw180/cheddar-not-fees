@@ -1,7 +1,5 @@
 'use strict'
-import * as actions from "actionTypes";
-
-// TODO: Should argument to actions be wrapped in a payload object?
+import * as actions from './actionTypes';
 
 // #############################################################################
 //                              Portfolio Input
