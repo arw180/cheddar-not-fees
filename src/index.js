@@ -16,6 +16,7 @@ import initialState from './store/initialState'
 injectTapEventPlugin();
 
 const history = useRouterHistory(createHashHistory)({ queryKey: false });
+// TODO: is loading initialState here ok?
 const store = configureStore(initialState);
 
 ReactDOM.render(

@@ -1,6 +1,12 @@
 'use strict'
 import * as actions from './actionTypes';
 
+// TODO: is it reasonable to think that all action creators will be in a single
+// file? Ultimately these functions will likely have a significant amount of 
+// business logic in them, so this file could get very large. That said, there
+//  isn't a one-to-one relationship between actions/actionCreators and reducers,
+//  so it isn't immediately clear how to best break up the actions
+
 // #############################################################################
 //                              Portfolio Input
 // #############################################################################
