@@ -1,3 +1,4 @@
+'use strict'
 // Actions for Portfolio Input
 export const UPDATE_START_MONTH = 'UPDATE_START_MONTH';
 export const UPDATE_START_YEAR = 'UPDATE_START_YEAR';

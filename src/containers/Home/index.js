@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 import DocumentMeta from 'react-document-meta';
 
 /* components */
-import { TopImage } from 'components/TopImage';
-import { Tools } from 'components/Tools';
-import { Projects } from 'components/Projects';
+import PortfolioInputCard from 'components/PortfolioInputCard';
 
 const metaData = {
-  title: 'Redux Easy Boilerplate',
-  description: 'Start you project easy and fast with modern tools',
-  canonical: 'http://example.com/path/to/page',
+  title: 'Cheddar Not Fees',
+  description: 'Why you don\'t need a money manager',
+  canonical: 'http://cheddarnotfees.com',
   meta: {
     charset: 'utf-8',
     name: {
-      keywords: 'react,meta,document,html,tags',
+      keywords: 'investment, money, stock, vanguard, mutual fund',
     },
   },
 };
@@ -23,9 +21,7 @@ export class Home extends Component {
     return (
       <section>
         <DocumentMeta {...metaData} />
-        <TopImage />
-        <Tools />
-        <Projects />
+        <PortfolioInputCard />
       </section>
     );
   }

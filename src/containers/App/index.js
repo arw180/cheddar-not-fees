@@ -4,8 +4,7 @@ import React, { Component } from 'react';
 import './styles/app.scss';
 
 /* application components */
-import { Header } from 'components/Header';
-import { Footer } from 'components/Footer';
+import MyAppBar from 'components/MyAppBar';
 
 export class App extends Component {
   static propTypes = {
@@ -15,9 +14,8 @@ export class App extends Component {
   render() {
     return (
       <section>
-        <Header />
+        <MyAppBar />
         {this.props.children}
-        <Footer />
       </section>
     );
   }
